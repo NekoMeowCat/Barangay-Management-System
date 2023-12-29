@@ -125,81 +125,92 @@
                     meet our council
                 </span>
             </figure>
-            <figure class="mx-32 mt-8">
-                <div data-hs-carousel='{
-                        "loadingClasses": "opacity-0",
-                        "isAutoPlay": false
-                    }' class="relative">
-                    <div class="hs-carousel relative overflow-hidden w-full min-h-[400px] rounded-lg">
-                        <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-                            <div class="hs-carousel-slide grid grid-cols-3 gap-6 ">
-                                <!-- Card 1 -->
-                                <div class="flex justify-center h-full bg-gray-100 p-6 border">
-                                    <div class="block m-8 border w-full">
-                                        <div class="">1</div>
-                                        <div class="">1</div>
-                                    </div>
-                                </div>
-                                <!-- Card 2 -->
-                                <div class="flex justify-center h-full bg-gray-100 p-6 border">
-                                    <span class="self-center text-4xl transition duration-700">Card 2</span>
-                                </div>
-                                <!-- Card 3 -->
-                                <div class="flex justify-center h-full bg-gray-100 p-6 border">
-                                    <span class="self-center text-4xl transition duration-700">Card 3</span>
-                                </div>
-                            </div>
-
-                            <div class="hs-carousel-slide grid grid-cols-3 gap-6">
-                                <!-- Card 1 -->
-                                <div class="flex justify-center h-full bg-gray-200 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Card 1</span>
-                                </div>
-                                <!-- Card 2 -->
-                                <div class="flex justify-center h-full bg-gray-200 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Card 2</span>
-                                </div>
-                                <!-- Card 3 -->
-                                <div class="flex justify-center h-full bg-gray-200 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Card 3</span>
-                                </div>
-                            </div>
-                            <div class="hs-carousel-slide grid grid-cols-3 gap-6">
-                                <!-- Card 1 -->
-                                <div class="flex justify-center h-full bg-gray-300 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Card 1</span>
-                                </div>
-                                <!-- Card 2 -->
-                                <div class="flex justify-center h-full bg-gray-300 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Card 2</span>
-                                </div>
-                                <!-- Card 3 -->
-                                <div class="flex justify-center h-full bg-gray-300 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Card 3</span>
-                                </div>
+            <figure class="md:mx-32 mt-8">
+                <x-carousel />
+            </figure>
+        </section>
+        <section class="min-h-screen block">
+            <figure class="flex justify-center">
+                <span class="text-lg capitalize font-semibold font-roboto text-[#3a3d3e]">
+                    certificates
+                </span>
+            </figure>
+            <figure class="flex justify-center">
+                <span class="text-5xl font-roboto text-[#3a3d3e] font-semibold capitalize">
+                    Explore Our Online Service
+                </span>
+            </figure>
+            <figure class="md:mx-32 mt-6 md:mt-20 border">
+                <article class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="max-w-2xl mx-auto">   
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="rounded-t-lg" src="{{ asset('storage/images/clearance.jpg') }}" alt="">
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/[.1]">
-                        <span class="text-2xl" aria-hidden="true">
-                        <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                        </span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                    <button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/[.1]">
-                        <span class="sr-only">Next</span>
-                        <span class="text-2xl" aria-hidden="true">
-                        <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                        </span>
-                    </button>
-
-                    <div class="hs-carousel-pagination flex justify-center mt-6 bottom-3 start-0 end-0 space-x-1">
-                        <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-8 h-2 border border-gray-400 cursor-pointer"></span>
-                        <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-8 h-2 border border-gray-400 cursor-pointer"></span>
-                        <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-8 h-2 border border-gray-400 cursor-pointer"></span>
+                    <div class="max-w-2xl mx-auto">   
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="rounded-t-lg" src="{{ asset('storage/images/indigency.jpg') }}" alt="">
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="max-w-2xl mx-auto">   
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-2xl mx-auto">   
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm ">
+                            <a href="#">
+                                <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </figure>
         </section>
     </main>

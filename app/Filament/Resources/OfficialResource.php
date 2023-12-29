@@ -29,7 +29,9 @@ class OfficialResource extends Resource
                 Forms\Components\Select::make('user_id')
                     ->label('Select Resident')
                     ->required()
-                    ->relationship('User', 'name'),
+                    ->relationship('User', 'name', function ($query) {
+                        $query->whereNotIn('id', Official::pluck('user_id'));
+                    }),
                 Forms\Components\TextInput::make('position')
                     ->required(),
                 Forms\Components\DatePicker::make('term_start')
@@ -37,6 +39,7 @@ class OfficialResource extends Resource
                 Forms\Components\DatePicker::make('term_end')
                     ,
             ]);
+            
     }
 
     public static function table(Table $table): Table
@@ -77,6 +80,11 @@ class OfficialResource extends Resource
         return [
             //
         ];
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return Official::count();
     }
 
     public static function getPages(): array
