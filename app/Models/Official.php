@@ -18,8 +18,9 @@ class Official extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class)->select(['id', 'name', 'image']);
     }
+
     public function blottersInvolved()
     {
         return $this->hasMany(Blotter::class, 'officer_involved');
